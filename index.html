@@ -10,31 +10,34 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            min-height: 100%;
         }
 
         body {
-            background-image:
-                url("background1.PNG"),
-                url("background2.jpg");
+            overflow-x: hidden;
+        }
 
-            background-repeat:
-                no-repeat,
-                no-repeat;
+        .background {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-            background-position:
-                center top,
-                center bottom;
-
-            background-size:
-                100% auto,
-                100% auto;
-
-            background-attachment: scroll;
+        .background img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
+
+    <div class="background">
+        <img src="background1.PNG" alt="">
+        <img src="background2.jpg" alt="">
+    </div>
+
 </body>
 </html>
